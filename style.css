@@ -1,0 +1,22 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;      /*changed the font a bit*/     
+    padding: 20px;      /*increased padding to 20 pixels */
+    background-color: lightblue;        /*changed the color of the background as white kinda seems boring*/
+}
+
+.container{
+    max-width: 500px;       /*increasied the widht of the div by 500 pixels*/
+    margin: auto;
+}
+
+button, input[type="number"]{       /*some adjustement to the margin by 5 pixels and padding by 6 and 12 pixels to the buttons and input*/
+    margin: 5px 0;
+    padding: 6px 12px;
+}
+
+#output{        
+    margin-top: 20px;       /*adjusted the top margin by 20 pixels*/
+    border-top: 1px solid #990101;      /*changed the color of the top border and its size by 1 pixel*/
+    padding-top: 10px;      /*increased the padding on top by 10 pixels*/
+    white-space: pre-wrap;      /*Preserves whitespace and line breaks and wraps text to the next line. Copied from chatGPT as i did not know about this feature.*/
+}

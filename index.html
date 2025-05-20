@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab 2 – Cat Selector</title>
+        <meta charset="UTF-8" />
+        <meta name="description" content="This is a lab project to create and customize a webpage that helps users select the cat they want" />
+        <meta name="author" content="Ashutosh Mishra" />
+        <meta name="keywords" content="HTML, CSS, JavaScript,Typescript, Lab 2" />
+        <title>Cat Selector</title>
+        <link rel="stylesheet" href="style.css">  <!--this time i tried external css-->
+    </head>
+    <body>
+        <div class="container">     <!--to create a division to use all the buttons and labels -->
+
+            <!-- to create a button to view the names of the cats -->
+            <button id="allNamesBtn">All Names</button><br><br>
+
+            <!-- to create a button to view the names of the cats with different health issues -->
+            <button id="healthIssues">Health Issues</button>
+            <input type="number" id="healthInput" min="0" max="5"><br><br>   <!--maximum number of health issues are 5 according to the api-->
+
+            <!--to create a radio input for the weight measurement unit-->
+            <label><input type="radio" name="unit" value="imperial" checked>Imperial</label>
+            <label><input type="radio" name="unit" value="metric">Metric</label>
+            <button id="weightBtn">Weight</button><br><br>  <!--button to click to view the cat names with their respective weights-->
+
+            <!--to create a buttons for intelligence, average intelligence and average intelligence for child firendly cats-->
+            <button id="intelligence">Intelligence - Friendly</button><br><br>
+            <button id="avgIntelligence">Average Intelligence</button><br><br>
+            <button id="avgIntelligenceChild">Average Intelligence for Child Friendly = 4</button><br><br>
+
+            <!--created a different area for the list to be displayed-->
+            <div id="output"><-All Results should be dispalyed here -></div>
+        </div>
+        <script src="dist/script.js"></script>      <!--external css so why not keep the script external as well (very professional)-->
+    </body>
+</html>
